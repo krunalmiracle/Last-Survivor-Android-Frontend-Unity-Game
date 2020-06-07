@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">LastSurvivorFrontend</string>
+    <string name="description">LogoImageOfLastSurvivor</string>
+    <string name="password">Password</string>
+    <string name="signIn">Login</string>
+    <string name="signUp">No account yet? Create one</string>
+    <string name="username">Username</string>
+    <string name="game_view_content_description"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register">Register</string>
+    <string name="go_back">GO BACK!</string>
+    <string name="swordImg">GO BACK!</string>
+    <string name="dragonImg">GO BACK!</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

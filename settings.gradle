@@ -1,0 +1,4 @@
+rootProject.name='LastSurvivorFrontend'
+include ':app'
+include ':unityLibrary'
+project(':unityLibrary').projectDir=new File('androidBuild\\unityLibrary')

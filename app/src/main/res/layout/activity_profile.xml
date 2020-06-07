@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Player Profile"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/avatarImg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:clickable="true"
+        android:onClick="onChangeAvatarClicked"
+        app:layout_constraintEnd_toEndOf="@id/topText"
+        app:layout_constraintStart_toStartOf="@id/topText"
+        app:layout_constraintTop_toBottomOf="@+id/topText"
+        app:layout_goneMarginTop="20dp"
+        app:srcCompat="@drawable/userlogo" />
+
+    <TextView
+        android:id="@+id/textAvatar"
+        android:layout_width="98dp"
+        android:layout_height="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Change Avatar"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/avatarImg"
+        app:layout_constraintStart_toStartOf="@+id/avatarImg"
+        app:layout_constraintTop_toBottomOf="@+id/avatarImg"
+        app:layout_goneMarginTop="20dp" />
+
+
+    <TextView
+        android:id="@+id/playerNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Username : Kru"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textAvatar"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/textAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/textAvatar" />
+
+    <TextView
+        android:id="@+id/statsText"
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:text="Kills : 22\nCoins : 100\nExperience : 200\nLevel : 3"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/playerNameText"
+        app:layout_constraintStart_toStartOf="@+id/playerNameText"
+        app:layout_constraintTop_toBottomOf="@+id/playerNameText" />
+
+    <Button
+        android:id="@+id/changePasswordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:onClick="onChangePasswordClicked"
+        android:text="Change Password"
+        app:layout_constraintEnd_toEndOf="@+id/statsText"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/statsText"
+        app:layout_constraintTop_toBottomOf="@+id/statsText" />
+
+    <Button
+        android:id="@+id/cancelbtn"
+        android:layout_width="105dp"
+        android:layout_height="46dp"
+        android:clickable="true"
+        android:onClick="onCancelClicked"
+        android:text="Cancel"
+        app:layout_constraintStart_toStartOf="@+id/statsText"
+        app:layout_constraintTop_toBottomOf="@+id/changePasswordBtn" />
+
+    <Button
+        android:id="@+id/acceptbtn"
+        android:layout_width="104dp"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:onClick="onAcceptClicked"
+        android:text="Accept"
+        app:layout_constraintBottom_toBottomOf="@+id/cancelbtn"
+        app:layout_constraintEnd_toEndOf="@+id/statsText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cancelbtn"
+        app:layout_constraintTop_toBottomOf="@+id/changePasswordBtn" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_cyclic"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
